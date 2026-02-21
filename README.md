@@ -25,7 +25,7 @@ app/
 ├── crud.py        # Database operations
 ├── database.py    # Database configuration
 
-## Instalación
+## Installation
 git clone https://github.com/mariomirandadev/task-manager-api.git
 cd task-manager-api
 pip install -r requirements.txt
