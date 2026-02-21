@@ -1,41 +1,43 @@
 # Task Manager API
+REST API built with FastAPI for managing tasks.
+This project demonstrates CRUD operations, layered architecture, and database integration using SQLAlchemy.
 
-API REST desarrollada con FastAPI para gestionar tareas. Permite crear, listar, actualizar y eliminar tareas utilizando una arquitectura organizada por capas.
+## Features
+- Create tasks
+- List all tasks
+- Update existing tasks
+- Delete tasks
+- Data validation with Pydantic
+- Layered architecture (routers, models, schemas, CRUD)
 
-Proyecto enfocado en aplicar principios básicos de arquitectura backend y separación de responsabilidades.
-
-## Tecnologías
+## Technologies
+- Python
 - FastAPI
 - SQLAlchemy
 - SQLite
-- Pydantic
+- Git
 
-## Estructura del proyecto
-
+## Project Structure
 app/
-- main.py: Endpoints y configuración principal
-- models.py: Modelos ORM
-- schemas.py: Validación de datos
-- crud.py: Lógica de acceso a datos
-- database.py: Configuración de la base de datos
+├── main.py        # Application entry point
+├── models.py      # Database models
+├── schemas.py     # Pydantic schemas
+├── crud.py        # Database operations
+├── database.py    # Database configuration
 
 ## Instalación
-
-1. Clonar el repositorio:
 git clone https://github.com/mariomirandadev/task-manager-api.git
-
-2. Crear entorno virtual:
-python -m venv venv
-
-3. Instalar dependencias:
+cd task-manager-api
 pip install -r requirements.txt
 
-## Ejecutar
-
+## Run the project
+```bash
 uvicorn app.main:app --reload
+```
 
-Después abrir:
+Then open your browser at:
 http://127.0.0.1:8000/docs
+
 
 ## Funcionalidades
 - Crear tarea
@@ -43,7 +45,9 @@ http://127.0.0.1:8000/docs
 - Actualizar tarea
 - Eliminar tarea
 
-## Mejoras futuras
-- Autenticación de usuarios
-- Despliegue en la nube
-- Pruebas unitarias
+## Future Improvements
+- Implement authentication and user management
+-  Add pagination to task listing
+- Include automated testing
+- Dockerize the application
+- Deploy to a cloud platform
