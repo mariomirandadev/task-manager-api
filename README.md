@@ -18,12 +18,15 @@ This project demonstrates CRUD operations, layered architecture, and database in
 - Git
 
 ## Project Structure
+
+```
 app/
 ├── main.py        # Application entry point
 ├── models.py      # Database models
 ├── schemas.py     # Pydantic schemas
 ├── crud.py        # Database operations
 ├── database.py    # Database configuration
+```
 
 ## Installation
 git clone https://github.com/mariomirandadev/task-manager-api.git
